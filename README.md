@@ -34,8 +34,6 @@ python app.py
 Open your browser and navigate to http://127.0.0.1:5000/.
 
 ## **5. Usage Instructions**
-'''markdown
-## Usage Instructions
 1. Launch the web application.
 2. Paste email body text into the input field.
 3. Click "Analyze" to classify the email as **Phishing** or **Legitimate**.
