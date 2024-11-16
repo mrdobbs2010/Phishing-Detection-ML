@@ -10,8 +10,8 @@ A project leveraging machine learning and user behavior analytics to enhance phi
 - 'app/' : Flask app for email classification.
 - 'results/' : Evaluation metrics, graphs, and analysis.
 
-  ## Data
-  Due to size limitations, the dataset can be downloaded [here](https://drive.google.com/file/d/17-aFJFbgY3tto2r_NzDB26rRPe5Y28xA/view?usp=drive_link).
+## Data
+Due to size limitations, the dataset can be downloaded [here](https://drive.google.com/file/d/17-aFJFbgY3tto2r_NzDB26rRPe5Y28xA/view?usp=drive_link).
 
 ## Setup
 1. Clone the respository:
