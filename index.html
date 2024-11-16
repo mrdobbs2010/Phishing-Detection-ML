@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Classification</title>
+</head>
+<body>
+    <h1>Email Classification</h1>
+    <form action="/predict" method="post">
+        <label for="email_body">Email Body:</label><br>
+        <textarea id="email_body" name="email_body" rows="10" cols="50" required></textarea><br><br>
+        <input type="submit" value="Classify Email">
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        const form = document.querySelector('form');
+        const resultDiv = document.getElementById('result');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+            const emailBody = formData.get('email_body');
+
+            fetch('/predict', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                resultDiv.textContent = `Prediction: ${data.prediction}`;
+            })
+            .catch(error => {
+                resultDiv.textContent = `Error: ${error}`;
+            });
+        });
+    </script>
+</body>
+</html>
