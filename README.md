@@ -16,4 +16,4 @@ Due to size limitations, the dataset can be downloaded [here](https://drive.goog
 ## Setup
 1. Clone the respository:
    '''bash
-   git clone https://gihub.com/mrdobbs2010/phishing-detection-ml.git
+   git clone https://github.com/mrdobbs2010/phishing-detection-ml.git
